@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "nfthive_backend": {
+      "main": "src/nfthive_backend/main.mo",
+      "type": "motoko"
+    },
+    "nfthive_frontend": {
+      "dependencies": [
+        "nfthive_backend"
+      ],
+      "source": [
+        "src/nfthive_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "nfthive_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
